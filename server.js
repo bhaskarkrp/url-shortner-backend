@@ -2,7 +2,9 @@ const express = require("express");
 const mongoose = require("mongoose");
 const cors = require("cors");
 const app = express();
-const url = "mongodb://127.0.0.1:27017/url-shortner";
+// const url = "mongodb://127.0.0.1:27017/url-shortner";
+const url =
+  "mongodb+srv://url-shortner:b123456789@cluster0.6xfwl.mongodb.net/database?retryWrites=true&w=majority";
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
